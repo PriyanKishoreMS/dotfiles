@@ -1,0 +1,84 @@
+window:
+  padding:
+    x: 5
+    y: 5
+  class:
+    instance: Alacritty
+    general: Alacritty
+  opacity: 1
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+
+font:
+  normal:
+    family: JetBrains Mono Nerd Font
+    style: Medium
+  bold:
+    family: JetBrains Mono Nerd Font
+    style: Bold
+  italic:
+    family: JetBrains Mono Nerd Font
+    style: MediumItalic
+  bold_italic:
+    family: JetBrains Mono Nerd Font
+    style: BoldItalic
+  size: 7
+draw_bold_text_with_bright_colors: true
+
+colors:
+  # COLORSCHEME: base16-classic-dark-256.yml
+  # Default colors
+  primary:
+    background: '0x151515'
+    foreground: '0xd0d0d0'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x151515'
+    cursor: '0xd0d0d0'
+
+  # Normal colors
+  normal:
+    black: '0x151515'
+    red: '0xac4142'
+    green: '0x90a959'
+    yellow: '0xf4bf75'
+    blue: '0x6a9fb5'
+    magenta: '0xaa759f'
+    cyan: '0x75b5aa'
+    white: '0xd0d0d0'
+
+  # Bright colors
+  bright:
+    black: '0x505050'
+    red: '0xac4142'
+    green: '0x90a959'
+    yellow: '0xf4bf75'
+    blue: '0x6a9fb5'
+    magenta: '0xaa759f'
+    cyan: '0x75b5aa'
+    white: '0xf5f5f5'
+
+  selection:
+    text: '#5963a2'
+    background: '#f6f6f6'
+
+  # selection:
+  #   save_to_clipboard: false
+
+  indexed_colors:
+    - {index: 16, color: '0xd28445'}
+    - {index: 17, color: '0x8f5536'}
+    - {index: 18, color: '0x202020'}
+    - {index: 19, color: '0x303030'}
+    - {index: 20, color: '0xb0b0b0'}
+    - {index: 21, color: '0xe0e0e0'}
+shell:
+  program: /usr/bin/zsh
+
+key_bindings:
+  - {key: Return, mods: Super|Shift, action: SpawnNewInstance}
+
